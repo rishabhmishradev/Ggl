@@ -1,0 +1,10 @@
+{
+  "card_type": "intern_id",
+  "name": "Rishabh Kumar Mishra",
+  "designation": "Intern",
+  "department": "AI/ML",
+  "reference_id": "INT-GGL-2026-462",
+  "location": "Bangalore, India",
+  "valid_until": "2029-12-31",
+  "access level: Only in India"
+}
