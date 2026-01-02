@@ -1,10 +1,67 @@
-{
-  "card_type": "intern_id",
-  "name": "Rishabh Kumar Mishra",
-  "designation": "Intern",
-  "department": "AI/ML",
-  "reference_id": "INT-GGL-2026-462",
-  "location": "Bangalore, India",
-  "valid_until": "2029-12-31",
-  "access level: Only in India"
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Access Check</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #0f0f0f;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+
+    /* Loader */
+    .loader {
+      width: 60px;
+      height: 60px;
+      border: 6px solid #333;
+      border-top: 6px solid #00ffcc;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    /* Access Denied */
+    .denied {
+      display: none;
+      text-align: center;
+      color: red;
+      font-size: 32px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      0% { opacity: 1; }
+      50% { opacity: 0.4; }
+      100% { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="loader" id="loader"></div>
+
+  <div class="denied" id="denied">
+    ACCESS DENIED
+  </div>
+
+  <script>
+    setTimeout(() => {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("denied").style.display = "block";
+    }, 5000); // 5 seconds
+  </script>
+
+</body>
+</html>
